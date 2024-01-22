@@ -7,13 +7,15 @@ sendBtn.addEventListener('click', sendEmail);
 
 function sendEmail() {
     // Get the form data
-    const to = document.getElementById("to").value;
+    const to_email = '';
+    const from = document.getElementById("from").value;
     const subject = document.getElementById("subject").value;
     const message = document.getElementById("message").value;
 
     // Send the email using EmailJS
     emailjs.send("SERVICE_ID", "TEMPLATE_ID", {
-        to_email: to,
+        to_email: 'MY ADRESS',
+        from_email: from,
         subject: subject,
         message: message
     })
