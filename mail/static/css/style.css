@@ -115,16 +115,6 @@ body {
   cursor: pointer;
 }
 
-.quit-btn {
-  color: white;
-  background: linear-gradient(to left, #4776E6 0%, #7f47e6 100%);
-  padding: 6px 20px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 15px;
-  cursor: pointer;
-}
-
 .result-container {
   margin-bottom: 0;
   display: flex;
