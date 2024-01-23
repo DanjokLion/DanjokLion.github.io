@@ -130,7 +130,7 @@ body {
   transition: all 0.2s ease;
 }
 
-@media screen and (max-width: 60rem) {
+@media screen and (max-width: 1000px) {
   .container {
     margin: 0;
   }
@@ -154,7 +154,7 @@ body {
 
 }
 
-@media screen and (max-width: 56rem) {
+@media screen and (max-width: 850px) {
   
   .container {
     max-width: 90%;
@@ -208,7 +208,7 @@ body {
 
 }
 
-@media screen and (max-width: 36.25rem) {
+@media screen and (max-width: 660px) {
   .container {
     max-width: 100%;
   }
