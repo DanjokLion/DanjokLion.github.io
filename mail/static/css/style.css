@@ -23,7 +23,7 @@ body {
   margin-inline: 1rem;
 }
 
-/* .gradient-section {
+.gradient-section {
   width: 50%;
   position: relative;
 }
@@ -65,21 +65,12 @@ body {
 
 .gradient-content span {
   color: #4776E6;
-} */
+}
 
 .form-section {
   padding: 40px 50px 30px;
   width: 550px;
   background-color: #fff;
-  background-color: #ccff99;
-  background-image:
-    radial-gradient(at 83% 69%, hsla(280, 67%, 78%, 1) 0px, transparent 50%),
-    radial-gradient(at 9% 70%, hsla(18, 81%, 74%, 1) 0px, transparent 50%),
-    radial-gradient(at 61% 52%, hsla(153, 75%, 65%, 1) 0px, transparent 50%),
-    radial-gradient(at 28% 93%, hsla(321, 74%, 60%, 1) 0px, transparent 50%),
-    radial-gradient(at 34% 6%, hsla(216, 89%, 66%, 1) 0px, transparent 50%),
-    radial-gradient(at 51% 86%, hsla(295, 97%, 67%, 1) 0px, transparent 50%),
-    radial-gradient(at 32% 55%, hsla(295, 99%, 66%, 1) 0px, transparent 50%);
 }
 
 .form-section form {
@@ -139,11 +130,11 @@ body {
   transition: all 0.2s ease;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 60rem) {
   .container {
     margin: 0;
   }
-  .gradient-section {
+  /* .gradient-section {
     visibility: hidden;
   }
   .form-section{
@@ -156,11 +147,14 @@ body {
       radial-gradient(at 34% 6%, hsla(216, 89%, 66%, 1) 0px, transparent 50%),
       radial-gradient(at 51% 86%, hsla(295, 97%, 67%, 1) 0px, transparent 50%),
       radial-gradient(at 32% 55%, hsla(295, 99%, 66%, 1) 0px, transparent 50%);
+  } */
+  .gradient-content{
+    width: 90%;
   }
 
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 56rem) {
   
   .container {
     max-width: 90%;
@@ -214,7 +208,7 @@ body {
 
 }
 
-@media screen and (max-width: 384) {
+@media screen and (max-width: 36.25rem) {
   .container {
     max-width: 100%;
   }
