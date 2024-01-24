@@ -101,7 +101,7 @@ nav button#menuButton{
     align-items: center;
     justify-content: space-between;
     gap: 40px;
-
+    animation: 5s show ease;
 }
 
 .main .left{
