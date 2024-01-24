@@ -97,6 +97,7 @@ nav button#menuButton{
     align-items: center;
     justify-content: space-between;
     gap: 40px;
+    
 }
 
 .main .left{
@@ -390,6 +391,15 @@ footer .bottom .links a{
     margin-left: 14px;
 }
 
+.copyright{
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    color: #282938;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
 @media screen and (max-width: 1200px) {
     
     .main .left h5{
@@ -597,4 +607,9 @@ footer .bottom .links a{
         width: 100%;
     }
 
+}
+
+@keyframes show{
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
