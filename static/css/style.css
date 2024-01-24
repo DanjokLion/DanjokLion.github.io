@@ -45,6 +45,8 @@ nav .logo,
 footer .logo{
     display: flex;
     align-items: center;
+    animation-name: tracking-in-expand-fwd-top;
+    animation-duration: 1s;
 }
 
 nav .logo a,
@@ -64,6 +66,8 @@ nav ul,
 footer .top ul{
     display: flex;
     gap: 40px;
+    animation-name: tracking-in-expand-fwd-top;
+    animation-duration: 1s;
 }
 
 nav button{
@@ -97,7 +101,7 @@ nav button#menuButton{
     align-items: center;
     justify-content: space-between;
     gap: 40px;
-    
+
 }
 
 .main .left{
@@ -613,3 +617,37 @@ footer .bottom .links a{
     from {opacity: 0;}
     to {opacity: 1;}
 }
+
+@-webkit-keyframes tracking-in-expand-fwd-top {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px) translateY(-500px);
+              transform: translateZ(-700px) translateY(-500px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand-fwd-top {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px) translateY(-500px);
+              transform: translateZ(-700px) translateY(-500px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+      opacity: 1;
+    }
+  }
+  
