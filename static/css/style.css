@@ -81,8 +81,8 @@ nav button{
 }
 
 nav button:hover{
-    background-color: #5e3bee;
-    border-color: #5e3bee;
+    background-color: linear-gradient(to right, #4776E6 0%, #7f47e6 100%);;
+    border-color: linear-gradient(to right, #4776E6 0%, #7f47e6 100%);;
     color: #fff;
 }
 
@@ -117,7 +117,7 @@ nav button#menuButton{
 }
 
 .main .left h3 span{
-    color: #5e3bee;
+    color: linear-gradient(to right, #4776E6 0%, #7f47e6 100%);
 }
 
 .main .left p{
@@ -237,6 +237,7 @@ nav button#menuButton{
 
 .portfolio .header button{
     background-color: #5e3bee;
+    background: linear-gradient(to right, #4776E6 0%, #7f47e6 100%);
     padding: 10px 20px;
     color: #fff;
     display: flex;
