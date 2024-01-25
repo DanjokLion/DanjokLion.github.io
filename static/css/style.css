@@ -131,6 +131,7 @@ nav button#menuButton{
     color: #fff;
     cursor: pointer;
     background-color: #5e3bee;
+    background: linear-gradient(to right, #4776E6 0%, #7f47e6 100%);
     padding: 14px 24px;
     border: 1px solid transparent;
     border-radius: 5px;
