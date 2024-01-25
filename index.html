@@ -25,7 +25,7 @@
             <li class="link-site"><a href="#portfolio">Portfolio</a></li>
             <li class="link-site"><a href="#feedback">Feedback</a></li>
         </ul>
-        <button class='btn' onclick="document.location='mail/mail.html'">Contact me</button>
+        <button class='btn' onclick="toggleModal()">Contact me</button>
         <button id="menuButton" onclick="openMenu()">
             <i class='bx bx-menu'></i>
         </button>
@@ -226,16 +226,16 @@
 
     <footer>
         <div class="top">
-            <div class="logo">
+            <!-- <div class="logo">
                 <!-- <img src="static/img/logo.png"> -->
                 <a href="#">HellRayGH</a>
-            </div>
-            <ul>
+            </div> -->
+            <!-- <ul>
                 <li class="link-site"><a href="#">Home</a></li>
                 <li class="link-site"><a href="#">Blog</a></li>
                 <li class="link-site"><a href="#">Contact</a></li>
                 <li class="link-site"><a href="#">Projects</a></li>
-            </ul>
+            </ul> -->
             <div class="social-links">
                 <a href="https://t.me/frostraycorp" class="bx-icon"><i class='bx bxl-telegram'></i></a>
                 <a href="https://www.instagram.com/_danjoklion_/" class="bx-icon"><i class='bx bxl-instagram'></i></a>
@@ -249,6 +249,36 @@
         </div>
     </footer>
 
+    <div class="modal-background" onclick="toggleModal()"></div>
+
+    <div class="modal">
+        <div class="form-section">
+            <h2>Hi, Friend!</h2>
+            <p>Fill in your details</p>
+            <form id="main-form">
+                <div class="form-group">
+                    <label for="from">From:</label>
+                    <input type="email" id="from" name="from" required autocomplete="off" placeholder="Example@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required autocomplete="off"
+                        placeholder="Collaboration Request">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required spellcheck="false" autocomplete="off"
+                        placeholder="Your Text..."></textarea>
+                </div>
+                <div class="form-group result-container">
+                    <p class="result">Email sent successfully.</p>
+                    <button type="button" id='btn-send' class="send-btn">Send Email</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="static/js/script.js"></script>
 
 </body>

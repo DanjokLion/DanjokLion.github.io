@@ -573,6 +573,112 @@ footer .bottom .links a{
 
 }
 
+.modal-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1, 1);
+    background: rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+
+body.open .modal-background{
+    visibility: visible;
+    opacity: 1;
+    animation: background-in 1s both;
+}
+
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background: #37353b;
+    color: #f9f9f9;
+    padding: 48px 40px;
+    border-radius: 12px;
+    width: 400px;
+    translate: -50% -50%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+body.open .modal{
+    opacity: 1;
+    visibility: visible;
+    animation: modal-in 1s;
+}
+
+body.closed .modal{
+    opacity: 0;
+    visibility: hidden;
+    translate: -50% -50%;
+}
+
+.form-section form {
+    margin-top: 15px;
+  }
+  
+  .form-group {
+    margin-bottom: 12px;
+  }
+  
+  .form-group label {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: #fff;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input, .form-group textarea {
+    font-size: 0.875rem;
+    font-weight: 500;
+    width: 100%;
+    color: hsl(240, 54%, 15%);
+    padding: 0.3rem;
+    border: 2px solid #ccc;
+    border-radius: 0.3rem;
+    outline: none;
+  }
+  
+  .form-group textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  .send-btn {
+    color: white;
+    background: linear-gradient(to right, #4776E6 0%, #7f47e6 100%);
+    padding: 6px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  .result-container {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .result-container p{
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #3461ca;
+    opacity: 0;
+    transition: all 0.2s ease;
+  }
+
+
 @media screen and (max-width: 576px) {
     
     nav ul li a{
