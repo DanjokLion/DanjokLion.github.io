@@ -15,7 +15,7 @@ document.querySelectorAll('.bx-icon, .link-site').forEach(item => {
 
 document.getElementById('downloadButton').addEventListener('click', function() {
   const fileurl = '';
-  const fileName = 'Full-stack developer Daniil Popov resume.pdf'; 
+  const fileName = 'DaniilPopovResume.pdf'; 
 
   let link = document.createElement('a');
   link.href = fileurl;
