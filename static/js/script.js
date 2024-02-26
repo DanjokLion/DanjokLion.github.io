@@ -24,19 +24,19 @@ document.querySelectorAll('.bx-icon, .link-site').forEach(item => {
     });
   });
 
-document.getElementById('downloadButton').addEventListener('click', function() {
-  const fileurl = '';
-  const fileName = 'DaniilPopovResume.pdf'; 
+// document.getElementById('downloadButton').addEventListener('click', function() {
+//   const fileurl = '';
+//   const fileName = 'DaniilPopovResume.pdf'; 
 
-  let link = document.createElement('a');
-  link.href = fileurl;
-  link.download = fileName;
+//   let link = document.createElement('a');
+//   link.href = fileurl;
+//   link.download = fileName;
 
-  document.body.appendChild(link);
-  link.click();
+//   document.body.appendChild(link);
+//   link.click();
 
-  document.body.removeChild(link);
-});
+//   document.body.removeChild(link);
+// });
 
 emailjs.init("DMNgsfT8ea-nrlR7R"); // Replace with your EmailJS User ID
 
